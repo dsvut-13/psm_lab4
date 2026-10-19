@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: nobel_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: nobel_db
+      PGTZ: UTC
+    ports:
+      - "5432:5432"
